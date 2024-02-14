@@ -1,0 +1,33 @@
+FeatureConfig:
+  Valence:
+    distribution: truncated_normal
+    parameters:
+      mu: 0.5
+      sigma: 0.3
+      low: 0
+      up: 1
+    weight: null
+  Complexity:
+    distribution: truncated_normal
+    parameters:
+      mu: 0.5
+      sigma: 0.3
+      low: 0
+      up: 1
+    weight: 0.5
+  Manifestation Strength:
+    distribution: beta
+    parameters:
+      alpha: 2
+      beta: 3
+    weight: 0.5
+  Activation Threshold:
+    distribution: beta
+    parameters:
+      alpha: 2.2
+      beta: 1.8
+    weight: null
+
+ThoughtseedNetworkConfig:
+  num_thoughtseeds: 1000
+  global_energy_value: 100
